@@ -1,0 +1,44 @@
+* body {
+	padding-top: 100px;
+}
+//.jumbotron {
+//	background-color: #cfd8dc;
+//} 
+.navbar-right {
+	float: none !important;
+	position: relative;
+	left: 40%;
+}
+h5.navbar-brand{
+	margin: 0;
+}
+.fixed-header{
+	position: fixed;	
+	top: 0;	
+	padding-right: 15px;	
+	padding-left: 15px;	
+	margin-right: auto;	
+	margin-left: auto;	
+	width: 100%;
+	background: linear-gradient(to right, rgba(0, 88, 147, 1) 0%, rgba(0, 88, 147, 1) 59%, rgba(119, 196, 42, 1) 86%, rgba(119, 196, 42, 1) 100%);
+    background-image: linear-gradient(to right, rgb(0, 88, 147) 0%, rgb(0, 88, 147) 59%, rgb(119, 196, 42) 86%, rgb(119, 196, 42) 100%);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+	background-color: initial;
+	h1,h2,h3,h4,h5{
+		color: #fff;
+	}
+}
+.navbar-fixed-top{
+	top:46px;	
+}
+.nav-background-gray{
+	background-color: #f5f5f5;
+    border-bottom: 1px solid #e0e0e0;
+}
