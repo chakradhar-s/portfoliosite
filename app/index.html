@@ -2,15 +2,11 @@
 <html>
 
 <head>
-    <title>Protfolio</title>
+    <title>Portfolio-Chakradhar</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="The Protfolio site to display information">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="pragma" content="no-cache" />
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="cache-control" content="no-store" />
 
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
@@ -39,7 +35,7 @@
 
 <body>
     <header class="fixed-header">
-        <h4 class="text-center">Project name</h4>
+        <h4 class="text-center">Chakradhar Singanamalla</h4>
     </header>
     <nav class="navbar navbar-background-gray navbar-fixed-top">
         <div class="container-fluid">
@@ -51,17 +47,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <h5 class="nav-title">Portfolio</h5>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#">Profile</a>
-                    </li>
-                    <li>
+                <ul class="nav navbar-nav navbar-center">
+                    <li class="nav-items" data-target="#portfolio">
                         <a href="#">Portfolio</a>
                     </li>
-                    <li>
-                        <a href="#">Contact</a>
+                    <li class="nav-items" data-target="#resume">
+                        <a href="#">Resume</a>
+                    </li>
+                    <li class="nav-items" data-target="#about">
+                        <a href="#">About</a>
                     </li>
                 </ul>
             </div>
@@ -69,42 +66,134 @@
     </nav>
     <div class="container">
         <div class="row">
-            <section class="col-md-12">
-                <article>
-                    <header>
-                        <h1>Article #1</h1>
-                    </header>
-                    <section>
-                        This is the first article.
-                    </section>
-                </article>
-                <article>
-                    <header>
-                        <h1>Article #2</h1>
-                    </header>
-                    <section>
-                        This is the second article.
+            <section class="col-md-12 col-container" id="portfolio">
+                <article class="row">
+                    <section class="col-md-12">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="./img/csharp.png" alt="C sharp project" width="70">
+                                <div class="caption">
+                                    <h3 class="text-center">External Authentication</h3>
+                                    <p>
+                                        This is a c# ASP MVC project which supports external authentication with Owin library and provides generic authentication
+                                        and autherization.
+                                    </p>
+                                    <p class="text-center">
+                                        <a href="https://github.com/chakradhar-s/OwinAuth" target="_blank">Owin without default identity library</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="./img/python.sh.png" alt="Python project" width="70">
+                                <div class="caption">
+                                    <h3 class="text-center">Python Movie Trailer</h3>
+                                    <p>
+                                        This is a python project which plays movies trailers by the you tube media player.
+                                    </p>
+                                    <p class="text-center">
+                                        <a href="https://github.com/chakradhar-s/ud036_StarterCode" target="_blank">Movies trailer</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="./img/HTML5.png" alt="..." width="70">
+                                <div class="caption">
+                                    <h3 class="text-center">Portfolio Site</h3>
+                                    <p>
+                                        This is a static portfolio boilerplate project, built with bootstrap3 for responsiveness.
+                                    </p>
+                                    <p class="text-center">
+                                        <a href="https://github.com/chakradhar-s/portfoliosite" target="_blank">Portfolio</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                 </article>
             </section>
-            <aside>
-                <section>
-                    <h1>Links</h1>
-                    <ul>
-                        <li>
-                            <a href="#">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Link 2</a>
-                        </li>
-                    </ul>
-                </section>
-                <figure>
-                    <img width="85" height="85" src="http://domain.tld/path/to/image.jpg" alt="foobar" />
-                    <figcaption>Foobar</figcaption>
-                </figure>
-            </aside>
-            <footer>Footer</footer>
+            <section class="col-md-12 col-container hide" id="about">
+                <article class="row">
+                    <header class="col-md-12">
+                        <h1 title="About-Chakradhar Singanamalla">About Me</h1>
+                    </header>
+                    <section class="col-md-12">
+                        <p class="avatar-intro font-18">
+                            <img class="face-profile flow-left" alt="profile image"> I'm Chakradhar Singanamalla, a Full Stack Web Developer. I live in the Uppal area, with my parents(Ranga
+                            and Kumari). I enjoy all things technology related, from programming and web design to online
+                            shopping. When I'm not hard at work, you can usually find me settling down with a good book,
+                            catching up on my favorite TV shows.
+                        </p>
+                        <p class="font-18">
+                            My resume is available and details my previous roles at GGK Technologies and Mwebware services
+                        </p>
+                    </section>
+                </article>
+                <article class="row">
+                    <header class="col-md-12">
+                        <h1 title="Get in Touch">Get in Touch</h1>
+                    </header>
+                    <section class="col-md-12">
+                        <ul class="social-nav">
+                            <li class="social-nav-item">
+                                <a href="http://github.com/walesmd" title="GitHub: chakradhar-s">
+                                    <i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                            </li>
+                            <li class="social-nav-item">
+                                <a href="https://www.linkedin.com/in/chakradhar-s/" title="LinkedIn: Chakradhar">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                            </li>
+                            <li class="social-nav-item">
+                                <a href="mailto:venkatachakradhar@gmail.com" title="Email: Venkata Chakradhar">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i> Email</a>
+                            </li>
+                        </ul>
+                    </section>
+                </article>
+            </section>
+            <section class="col-md-12 col-container hide" id="resume">
+                <article class="row">
+                    <section class="col-md-12">
+                        <h2 id="highlights">Highlights</h1>
+                            <ul class="font-18">
+                                <li>Self-taught Full-Stack Web Developer</li>
+                                <li>Excels at the front end development</li>
+                            </ul>
+                    </section>
+                    <section class="col-md-12">
+                        <h2 id="experience">Experience</h1>
+                            <h4 class="font-22">Software Engineer</h4>
+                            <h5 class="font-20">GGK Technologies(FEB 2017-Till)</h5>
+                            <ul class="font-18">
+                                <li>Developed Micro services</li>
+                                <li>Applied major front end technologies</li>
+                            </ul>
+                            <h5 class="font-20">Mwebware(JUL 2016-FEB 2017)</h5>
+                            <ul class="font-18">
+                                <li>Developed a cloud based e-bussiness application for different medical diagnostic centers bringing on a network</li>
+                                <li>Developed DICOM files online reader with front end technologies</li>
+                            </ul>
+                            <h4 class="font-22">Jr.Software Engineer</h4>
+                            <h5 class="font-20">Mwebware(JUL 2015-JUL 2016)</h5>
+                            <ul class="font-18">
+                                <li>Developed a MVC application with ASP.NET</li>
+                            </ul>
+                    </section>
+                    <section class="col-md-12">
+                        <h2 id="skills-and-technologies">Skills and Technologies</h2>
+                        <ul class="font-18">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>SQL</li>
+                        </ul>
+                    </section>
+                </article>
+            </section>
         </div>
     </div>
 </body>

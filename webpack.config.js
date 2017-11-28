@@ -9,27 +9,27 @@ const autoprefixer = require('autoprefixer');
 const precss = require('precss');
 
 module.exports = {
-	context: path.resolve('./app'),
-	entry: './js/index.js',
-	output: {
-		path: path.resolve('./dist/'),
-		filename: 'js/bundle.js',
-		publicPath: '/'
-	},
-	module: {       
+    context: path.resolve('./app'),
+    entry: './js/index.js',
+    output: {
+        path: path.resolve('./dist/'),
+        filename: 'js/bundle.js',
+        publicPath: '/'
+    },
+    module: {
         rules: [
             {
                 test: /\.(js|jsx)?$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 query: {
-					presets: ['es2015']
+                    presets: ['es2015']
                 },
-			},
-			{
-				test: /\.html$/,
-				loader: 'html-loader'
-			},
+            },
+            {
+                test: /\.html$/,
+                loader: 'html-loader'
+            },
             {
                 test: /\.(scss|css)?$/,
                 use: ExtractTextPlugin.extract({
@@ -37,7 +37,7 @@ module.exports = {
                     use: [
                         {
                             loader: 'css-loader', // translates CSS into CommonJS modules
-                        }, 
+                        },
                         {
                             loader: 'postcss-loader', // Run post css actions
                             options: {
@@ -50,12 +50,12 @@ module.exports = {
                                 }
                             }
                         },
-						 {
+                        {
                             loader: 'sass-loader' // compiles SASS to CSS
                         }
                     ]
                 })
-            },           
+            },
             {
                 test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 use: 'url-loader?limit=10000&mimetype=application/font-woff&name=fonts/[name].[ext]',
@@ -70,38 +70,38 @@ module.exports = {
                     'file-loader?name=images/[name].[ext]',
                     'image-webpack-loader?bypassOnDebug'
                 ]
-            }            
+            }
         ]
     },
-	resolve: {
+    resolve: {
         extensions: ['.js'],
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),        
+        new CleanWebpackPlugin(['dist']),
         new webpack.optimize.UglifyJsPlugin({
             include: /\.min\.js$/,
             minimize: true
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
-            jQuery: 'jquery'           
-		}),
-		new CopyWebpackPlugin([{
-			from: './manifest.json'
-		},{
-			from: './manifest.webapp'
-		},{
-			from: './robots.txt'
-		},{
-			from: './favicon.ico'
-		},{
-			from: './img/**/*',
-			to: './'
-		}]),
-		new HtmlWebpackPlugin({
-			template: './index.html'
-		}),
-		new ExtractTextPlugin("style.css")
+            jQuery: 'jquery'
+        }),
+        new CopyWebpackPlugin([{
+            from: './manifest.json'
+        }, {
+            from: './manifest.webapp'
+        }, {
+            from: './robots.txt'
+        }, {
+            from: './favicon.ico'
+        }, {
+            from: './img/**/*',
+            to: './'
+        }]),
+        new HtmlWebpackPlugin({
+            template: './index.html'
+        }),
+        new ExtractTextPlugin("styles.css")
     ],
 
 }
