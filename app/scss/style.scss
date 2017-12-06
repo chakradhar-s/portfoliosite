@@ -116,7 +116,7 @@ ul, ol {
     display: block;
     float: left;
     margin-right: 0.5em;
-    max-width: 20%;
+    max-width: 25%;
     min-width: 12%;
 }
 .avatar-intro::after {
@@ -142,5 +142,10 @@ ul, ol {
 }
 .col-container {
     padding-left: 20px;
-    padding-right: 20px;
+	padding-right: 20px;
+	header{
+		h2:first-of-type,h3:first-of-type,h4:first-of-type,h5:first-of-type,h6:first-of-type{
+			margin-top: 0;
+		}
+	}
 }
