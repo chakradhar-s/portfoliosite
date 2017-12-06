@@ -1,44 +1,43 @@
 * body {
     padding-top: 100px;
 }
-
-@media (min-width: 768px) {
+@media (min-width:768px) {
     .navbar-center {
         float: none;
-        position: relative;
-        margin-right: auto;
         margin-left: auto;
+        margin-right: auto;
+        position: relative;
         width: 50%;
     }
     .navbar-nav > li > a {
-        padding-bottom: 15px;
         outline: none;
+        padding-bottom: 15px;
     }
 }
-@media (min-width: 768px) {
+@media (min-width:768px) {
     .navbar-center {
         left: 4.7em;
     }
 }
-@media (min-width: 992px) {
+@media (min-width:992px) {
     .navbar-center {
         left: 10.46em;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width:1200px) {
     .navbar-center {
         left: 15.5em;
     }
 }
-@media (max-width: 767px) {
+@media (max-width:767px) {
     .nav-title {
-        width: 40%;
-        padding-top: 1.3em;
         margin: 0;
         padding-left: 5em;
+        padding-top: 1.3em;
+        width: 40%;
     }
 }
-@media (min-width: 768px) {
+@media (min-width:768px) {
     .nav-title {
         display: none;
     }
@@ -47,25 +46,25 @@ h5.navbar-brand {
     margin: 0;
 }
 .fixed-header {
-    z-index: 5;
-    position: fixed;
-    top: 0;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    background: linear-gradient(to right, rgba(0, 88, 147, 1) 0%, rgba(0, 88, 147, 1) 59%, rgba(119, 196, 42, 1) 86%, rgba(119, 196, 42, 1) 100%);
-    background-image: linear-gradient(to right, rgb(0, 88, 147) 0%, rgb(0, 88, 147) 59%, rgb(119, 196, 42) 86%, rgb(119, 196, 42) 100%);
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
+    background: linear-gradient(to right,rgba(255, 153, 0,1) 0%, rgba(255, 153, 0,1) 12%,rgba(0,88,147,1) 35%,rgba(0,88,147,1) 45%,rgba(119,196,42,1) 86%,rgba(119,196,42,1) 100%);
     background-attachment: initial;
-    background-origin: initial;
     background-clip: initial;
     background-color: initial;
+    background-image: linear-gradient(to right,rgb(255, 153, 0) 0%, rgb(255, 153, 0) 12%,rgb(0,88,147) 35%,rgb(0,88,147) 45%,rgb(119,196,42) 86%,rgb(119,196,42) 100%);
+    background-origin: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-size: initial;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
     h1, h2, h3, h4, h5 {
         color: #fff;
     }
@@ -84,62 +83,64 @@ h5.navbar-brand {
     }
 }
 .face-profile {
-    height: 12rem;
     border-radius: 10em;
+    height: 12rem;
+    width: 12rem;
 }
 .flow-right {
     float: right;
 }
 .flow-left {
-	float: left;
+    float: left;
 }
 .hide {
     display: none;
 }
 .social-nav {
     list-style: none;
-	padding: 0;
-	a{
-		text-decoration: none;
-	}
+    padding: 0;
+    a {
+        text-decoration: none;
+    }
 }
-.social-nav ::after{
-	clear: both;
-	display: table;
-	content: " "
-}
-ul,ol {
-    margin-top: 0;
+.social-nav::after {
     clear: both;
+    content: " ";
+    display: table;
+}
+ul, ol {
+    clear: both;
+    margin-top: 0;
 }
 .social-nav-item {
     display: block;
-	margin-right: 0.5em;
-	float: left;
-	width: 12%;
+    float: left;
+    margin-right: 0.5em;
+    max-width: 20%;
+    min-width: 12%;
 }
-.avatar-intro::after{
-	clear: both;
-	display: table;
-	content: " ";
+.avatar-intro::after {
+    clear: both;
+    content: " ";
+    display: table;
 }
-.avatar-intro{
-	img{
-		margin-right: 12px;
-	}		
-	width: 80%;
+.avatar-intro {
+    width: 80%;
+    img {
+        margin-right: 12px;
+    }
 }
-.font-18{
-	font-size: 18px;
-	line-height: 26px;
+.font-18 {
+    font-size: 18px;
+    line-height: 26px;
 }
-.font-20{
+.font-20 {
     font-size: 20px;
 }
-.font-22{
+.font-22 {
     font-size: 22px;
 }
-.col-container{
-	padding-right: 20px;
-	padding-left: 20px;	
+.col-container {
+    padding-left: 20px;
+    padding-right: 20px;
 }

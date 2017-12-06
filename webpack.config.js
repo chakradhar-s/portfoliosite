@@ -101,7 +101,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './index.html'
         }),
-        new ExtractTextPlugin("styles.css")
+        new ExtractTextPlugin("css/styles.css")
     ],
 
 }
