@@ -46,11 +46,11 @@ h5.navbar-brand {
     margin: 0;
 }
 .fixed-header {
-    background: linear-gradient(to right,rgba(255, 153, 0,1) 0%, rgba(255, 153, 0,1) 12%,rgba(0,88,147,1) 35%,rgba(0,88,147,1) 45%,rgba(119,196,42,1) 86%,rgba(119,196,42,1) 100%);
+    background: linear-gradient(to right,rgba(255,153,0,1) 0%,rgba(255,153,0,1) 12%,rgba(0,88,147,1) 35%,rgba(0,88,147,1) 45%,rgba(119,196,42,1) 86%,rgba(119,196,42,1) 100%);
     background-attachment: initial;
     background-clip: initial;
     background-color: initial;
-    background-image: linear-gradient(to right,rgb(255, 153, 0) 0%, rgb(255, 153, 0) 12%,rgb(0,88,147) 35%,rgb(0,88,147) 45%,rgb(119,196,42) 86%,rgb(119,196,42) 100%);
+    background-image: linear-gradient(to right,rgb(255,153,0) 0%,rgb(255,153,0) 12%,rgb(0,88,147) 35%,rgb(0,88,147) 45%,rgb(119,196,42) 86%,rgb(119,196,42) 100%);
     background-origin: initial;
     background-position-x: initial;
     background-position-y: initial;
@@ -116,7 +116,7 @@ ul, ol {
     display: block;
     float: left;
     margin-right: 0.5em;
-    max-width: 25%;
+    max-width: 30%;
     min-width: 12%;
 }
 .avatar-intro::after {
@@ -142,10 +142,16 @@ ul, ol {
 }
 .col-container {
     padding-left: 20px;
-	padding-right: 20px;
-	header{
-		h2:first-of-type,h3:first-of-type,h4:first-of-type,h5:first-of-type,h6:first-of-type{
-			margin-top: 0;
-		}
-	}
+    padding-right: 20px;
+    header {
+        h2:first-of-type, h3:first-of-type, h4:first-of-type, h5:first-of-type, h6:first-of-type {
+            margin-top: 0;
+        }
+    }
+}
+.pad-left-0 {
+    padding-left: 0;
+}
+.pad-right-0 {
+    padding-left: 0;
 }
