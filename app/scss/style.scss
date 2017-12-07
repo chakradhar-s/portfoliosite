@@ -1,6 +1,3 @@
-* body {
-    padding-top: 100px;
-}
 @media (min-width:768px) {
     .navbar-center {
         float: none;
@@ -51,11 +48,7 @@ h5.navbar-brand {
     background-clip: initial;
     background-color: initial;
     background-image: linear-gradient(to right,rgb(255,153,0) 0%,rgb(255,153,0) 12%,rgb(0,88,147) 35%,rgb(0,88,147) 45%,rgb(119,196,42) 86%,rgb(119,196,42) 100%);
-    background-origin: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-repeat-x: initial;
-    background-repeat-y: initial;
+    background-origin: initial;   
     background-size: initial;
     margin-left: auto;
     margin-right: auto;
@@ -154,4 +147,8 @@ ul, ol {
 }
 .pad-right-0 {
     padding-left: 0;
+}
+.container{
+    padding-top: 110px;
+    padding-bottom: 100px;
 }
