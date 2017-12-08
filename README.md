@@ -1,2 +1,2 @@
 # portfoliosite
-grid based website design
+A grid based website design
