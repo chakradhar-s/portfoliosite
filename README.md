@@ -39,4 +39,6 @@ npm run dev
 ```
 
 # Notes
-No errors should be in after running the series of scripts
+No errors should be in after running the series of scripts.
+Live internet connection is needed.
+Configure your npm artifactory settings to defaults.
