@@ -97,6 +97,9 @@ module.exports = {
         }, {
             from: './img/**/*',
             to: './'
+        },{
+            from: './svg/**/*',
+            to: './'
         }]),
         new HtmlWebpackPlugin({
             template: './index.html'
