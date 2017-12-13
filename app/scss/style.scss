@@ -1,3 +1,4 @@
+/*! Start of navigation and main header section*/
 @media (min-width:768px) {
     .navbar-center {
         float: none;
@@ -10,22 +11,26 @@
         outline: none;
         padding-bottom: 15px;
     }
-}
-@media (min-width:768px) {
+    .nav-title {
+        display: none;
+    }
     .navbar-center {
         left: 4.7em;
     }
 }
+
 @media (min-width:992px) {
     .navbar-center {
         left: 10.46em;
     }
 }
+
 @media (min-width:1200px) {
     .navbar-center {
         left: 15.5em;
     }
 }
+
 @media (max-width:767px) {
     .nav-title {
         margin: 0;
@@ -34,14 +39,7 @@
         width: 40%;
     }
 }
-@media (min-width:768px) {
-    .nav-title {
-        display: none;
-    }
-}
-h5.navbar-brand {
-    margin: 0;
-}
+
 .fixed-header {
     background: linear-gradient(to right,rgba(255,153,0,1) 0%,rgba(255,153,0,1) 12%,rgba(0,88,147,1) 35%,rgba(0,88,147,1) 45%,rgba(119,196,42,1) 86%,rgba(119,196,42,1) 100%);
     background-attachment: initial;
@@ -60,26 +58,27 @@ h5.navbar-brand {
     z-index: 5;
     h1, h2, h3, h4, h5 {
         color: #fff;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
 }
+
 .navbar-fixed-top {
     top: 55px;
 }
+
 .navbar-background-gray {
-    background-color: #f5f5f5;
+    background: #f5f5f5;
     border-bottom: 1px solid #e0e0e0;
     .navbar-toggle {
         border-color: #b4b4b4;
         .icon-bar {
-            background-color: #333;
+            background: #333;
         }
     }
 }
-.face-profile {
-    border-radius: 10em;
-    height: 12rem;
-    width: 12rem;
-}
+/*End of navigation and main header section*/
+
 .flow-right {
     float: right;
 }
@@ -89,6 +88,8 @@ h5.navbar-brand {
 .hide {
     display: none;
 }
+
+/*! Start of networking sites contact links*/
 .social-nav {
     list-style: none;
     padding: 0;
@@ -112,6 +113,15 @@ ul, ol {
     max-width: 30%;
     min-width: 12%;
 }
+/*End of networking sites contact links*/
+
+/*! Start of profile avatar*/
+.face-profile {
+    border-radius: 10em;
+    height: 12rem;
+    width: 12rem;
+}
+
 .avatar-intro::after {
     clear: both;
     content: " ";
@@ -123,16 +133,21 @@ ul, ol {
         margin-right: 12px;
     }
 }
+/*End of profile avatar*/
+
 .font-18 {
     font-size: 18px;
     line-height: 26px;
 }
+
 .font-20 {
     font-size: 20px;
 }
+
 .font-22 {
     font-size: 22px;
 }
+
 .col-container {
     padding-left: 20px;
     padding-right: 20px;
@@ -142,11 +157,17 @@ ul, ol {
         }
     }
 }
+
 .pad-left-0 {
     padding-left: 0;
 }
+
 .pad-right-0 {
     padding-left: 0;
+}
+
+.margin-top-0{
+    margin-top: 0;
 }
 .container {
     padding-top: 130px;

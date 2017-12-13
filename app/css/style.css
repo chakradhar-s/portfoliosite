@@ -7,26 +7,33 @@
         position: relative;
         width: 50%;
     }
+
     .navbar-nav > li > a {
         outline: none;
         padding-bottom: 15px;
     }
-}
-@media (min-width: 768px) {
+
+    .nav-title {
+        display: none;
+    }
+
     .navbar-center {
         left: 4.7em;
     }
 }
+
 @media (min-width: 992px) {
     .navbar-center {
         left: 10.46em;
     }
 }
+
 @media (min-width: 1200px) {
     .navbar-center {
         left: 15.5em;
     }
 }
+
 @media (max-width: 767px) {
     .nav-title {
         margin: 0;
@@ -35,14 +42,7 @@
         width: 40%;
     }
 }
-@media (min-width: 768px) {
-    .nav-title {
-        display: none;
-    }
-}
-h5.navbar-brand {
-    margin: 0;
-}
+
 .fixed-header {
     background: linear-gradient(to right, #ff9900 0%, #ff9900 12%, #005893 35%, #005893 45%, #77c42a 86%, #77c42a 100%);
     background-attachment: initial;
@@ -60,25 +60,32 @@ h5.navbar-brand {
     width: 100%;
     z-index: 5;
 }
+
 .fixed-header h1,
 .fixed-header h2,
 .fixed-header h3,
 .fixed-header h4,
 .fixed-header h5 {
     color: #fff;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
+
 .navbar-fixed-top {
     top: 55px;
 }
+
 .navbar-background-gray {
-    background-color: #f5f5f5;
+    background: #f5f5f5;
     border-bottom: 1px solid #e0e0e0;
 }
+
 .navbar-background-gray .navbar-toggle {
     border-color: #b4b4b4;
 }
+
 .navbar-background-gray .navbar-toggle .icon-bar {
-    background-color: #333;
+    background: #333;
 }
 /*End of navigation and main header section*/
 
@@ -97,19 +104,23 @@ h5.navbar-brand {
     list-style: none;
     padding: 0;
 }
+
 .social-nav a {
     text-decoration: none;
 }
+
 .social-nav::after {
     clear: both;
     content: " ";
     display: table;
 }
+
 ul,
 ol {
     clear: both;
     margin-top: 0;
 }
+
 .social-nav-item {
     display: block;
     float: left;
@@ -125,33 +136,40 @@ ol {
     height: 12rem;
     width: 12rem;
 }
+
 .avatar-intro::after {
     clear: both;
     content: " ";
     display: table;
 }
+
 .avatar-intro {
     width: 80%;
 }
+
 .avatar-intro img {
     margin-right: 12px;
 }
+/*End of profile avatar*/
+
 .font-18 {
     font-size: 18px;
     line-height: 26px;
 }
-/*End of profile avatar*/
 
 .font-20 {
     font-size: 20px;
 }
+
 .font-22 {
     font-size: 22px;
 }
+
 .col-container {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 .col-container header h2:first-of-type,
 .col-container header h3:first-of-type,
 .col-container header h4:first-of-type,
@@ -159,12 +177,19 @@ ol {
 .col-container header h6:first-of-type {
     margin-top: 0;
 }
+
 .pad-left-0 {
     padding-left: 0;
 }
+
 .pad-right-0 {
     padding-left: 0;
 }
+
+.margin-top-0 {
+    margin-top: 0;
+}
+
 .container {
     padding-top: 130px;
 }
